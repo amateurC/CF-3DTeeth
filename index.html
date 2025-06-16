@@ -182,7 +182,7 @@
     </div>
   </div>
 </section>
-  <!-- Ablation Study Section -->
+<!-- Ablation Study Section -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -192,15 +192,19 @@
           <p>
             The curve of training loss in ablation studies. Our proposed components help achieve faster convergence and better stability during optimization.
           </p>
-          <img src="./static/images/training_loss_curve.png"
-               alt="Training loss curve in ablation studies"
-               class="is-inline-block">
+
+          <!-- ✅ 使用 div 包裹来确保图片居中 -->
+          <div class="has-text-centered">
+            <img src="./static/images/training_loss_curve.png"
+                 alt="Training loss curve in ablation studies"
+                 style="max-width: 100%; height: auto;">
+          </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
-
 </body>
 
 </html>
