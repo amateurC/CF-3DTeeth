@@ -164,7 +164,6 @@
     </div>
   </div>
 </section>
-<!-- Ablation Study Section -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -175,18 +174,34 @@
             The curve of training loss in ablation studies. Our proposed components help achieve faster convergence and better stability during optimization.
           </p>
 
-          <!-- ✅ 使用 div 包裹来确保图片居中 -->
-          <div class="has-text-centered">
-            <img src="./static/images/training_loss_curve.png"
-                 alt="Training loss curve in ablation studies"
-                 style="max-width: 100%; height: auto;">
-          </div>
+          <figure class="has-text-centered">
+            <!-- (a) 新增图 -->
+            <div style="display: inline-block; margin: 10px;">
+              <img src="./static/images/original_input.png"
+                   alt="(a) Input image"
+                   style="width: 48%; height: auto; display: inline-block;">
+              <p style="margin-top: 0.3em;">(a) Input Image</p>
+            </div>
+
+            <!-- (b) 原来的 loss 曲线图 -->
+            <div style="display: inline-block; margin: 10px;">
+              <img src="./static/images/training_loss_curve.png"
+                   alt="(b) Training loss curve in ablation studies"
+                   style="width: 48%; height: auto; display: inline-block;">
+              <p style="margin-top: 0.3em;">(b) Training Loss Curve</p>
+            </div>
+
+            <figcaption style="margin-top: 1em; font-style: italic;">
+              <strong>Figure 5:</strong> Ablation study visualization. (a) Input image; (b) Training loss curve demonstrating improved convergence with proposed components.
+            </figcaption>
+          </figure>
 
         </div>
       </div>
     </div>
   </div>
 </section>
+
   <!-- Qualitative Comparison Section -->
 <section class="section">
   <div class="container is-max-desktop">
