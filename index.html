@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="description" content="Advanced Dental Digitization: Incorporating Shape Priors and Multiview Coherence in Diffusion Models for Tooth Model Design">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>A Diffusion Model for Compositional 3D Teeth Generation with Collision-Free Optimization</title>
+  <title>DM-CFO: A Diffusion Model for Compositional 3D Tooth Generation with Collision-Free Optimization</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
@@ -94,8 +94,12 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              The automatic design of a 3D tooth model plays an important role in dental digitization. However, current approaches struggle with compositional 3D tooth generation because both layouts and shapes of missing teeth need to be optimized. In addition, the collision conflict is omitted in 3D Gaussian-based compositional 3D generation, where objects may intersect with each other caused by the missing of explicit geometry information on the object surface. Motivated by graph generation based on the diffusion model and collision detection by 3D Gaussian, we design an approach for compositional tooth generation, where the layout of missing teeth is progressively restored in the denoising phase by both text and graph constraints. Then, the Gaussian parameters of each layout-guided tooth and the entire jaw are alternately updated using score distillation sampling (SDS). Moreover, a regularization term based on distances from 3D Gaussians of neighboring teeth to the anchor tooth is explored to penalize the tooth intersection. The experimental results on two tooth design datasets indicate that our approach improves the multiview consistency and realism of the generated teeth by a margin compared to the prevailing approaches.
-            </p>
+              The automatic design of a 3D tooth model plays a crucial role in dental digitization. However, current approaches face challenges in compositional 3D tooth generation because both the layouts and shapes of missing teeth need to be optimized.
+In addition, collision conflicts are often omitted in 3D Gaussian–based compositional 3D generation, where objects may intersect with each other due to the absence of explicit geometric information on the object surfaces.
+Motivated by graph generation through diffusion models and collision detection using 3D Gaussians, we propose an approach named DM-CFO for compositional tooth generation, where the layout of missing teeth is progressively restored during the denoising phase under both text and graph constraints.
+Then, the Gaussian parameters of each layout-guided tooth and the entire jaw are alternately updated using score distillation sampling (SDS).
+Furthermore, a regularization term based on the distances between the 3D Gaussians of neighboring teeth and the anchor tooth is introduced to penalize tooth intersections.
+Experimental results on three tooth-design datasets demonstrate that our approach significantly improves the multiview consistency and realism of the generated teeth compared with existing methods.
           </div>
         </div>
       </div>
